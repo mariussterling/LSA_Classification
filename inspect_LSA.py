@@ -104,7 +104,7 @@ for compNum in range(0, 10):
     # the order of the terms so the biggest one is on top.
     terms.reverse()
     weights.reverse()
-    positions = arange(10) + .5    # the bar centers on the y axis
+    positions = numpy.arange(10) + .5    # the bar centers on the y axis
     
     figure(compNum)
     barh(positions, weights, align='center')
